@@ -1,0 +1,82 @@
+#portfolio {
+    min-height: 100vh;
+}
+
+.star .line {
+    background-color: #2C3E50;
+    width: 80px;
+    height: 4px;
+}
+.title {
+    color: #2C3E50;
+    font-size: 2.5rem;   
+}
+
+.layer {
+    
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right:0;
+    bottom: 0;
+    opacity: 0;
+    font-size: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+ .item:hover .layer{
+    cursor: pointer;
+    font-size: 6rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right:0;
+    bottom: 0;
+    background-color: #1ABC9C;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transition:0.7s;
+
+}
+
+ .portfolioLayer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right:0;
+    bottom: 0;
+    background-color: rgba(13, 110, 253, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    
+ }   
+
+
+.close {
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    padding: 10px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.close i {
+    width: 40px;
+    height: 40px;
+    background-color: #1ABC9C;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+}
